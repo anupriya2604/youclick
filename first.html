@@ -1,0 +1,29 @@
+
+<html>
+<body bgcolor="pink">
+<h1> <center> <font color="blue"> YOU CLICK AND WE FIX  </font></center> </h1>
+<hr siz=5" color="green">
+<form>
+   <center> <h3>ADMIN NAME </h3> <input type="text" placeholder="Username" id="text1" /><br />
+<center>   <h3> PASSWORD </h3><input type="password" placeholder="Password" id="text2" /><br />
+<br>
+<br>
+    <center> <input type="button" value="Login"  onclick="javascript:validate()" />
+</form>
+<center><br><a href="jaff.apk">APP DOWNLOAD</a></center>
+<script type="text/javascript">
+function validate()
+{
+    if(   document.getElementById("text1").value == "workshop"
+       && document.getElementById("text2").value == "workshop" )
+    {
+        alert( "validation succeeded" );
+        location.href="second.html";
+    }
+    else
+    {
+        alert( "validation failed" );
+        location.href="first.html";
+    }
+}
+</script>
